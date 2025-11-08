@@ -70,28 +70,28 @@
     "price": "200",
     "related": [
       { "title": "Grupo Agencia - G7 1200 DD", "image": "./assets/agenciaAlt1.jpg", "price": "200" },
-      { "title": "Agencia Chadre - G8 1800 DD", "image": "./assets/agenciaChad1.jpg", "price": "100" },
-      { "title": "Agencia Sabelin - G8 1800 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
+      { "title": "Agencia Chadre - G7 1200 DD", "image": "./assets/agenciaChad1.jpg", "price": "100" },
+      { "title": "Agencia Sabelin - G7 1200 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
     ]
   },
   "9": {
-    "title": "Agencia Chadre - G8 1800 DD",
+    "title": "Agencia Chadre - G7 1200 DD",
     "images": ["./assets/agenciaChad1.jpg", "./assets/agenciaChad2.jpg"],
     "price": "100",
     "related": [
       { "title": "Grupo Agencia - G8 1800 DD", "image": "./assets/agencia1.jpg", "price": "200" },
       { "title": "Grupo Agencia - G7 1200 DD", "image": "./assets/agenciaAlt1.jpg", "price": "200" },
-      { "title": "Agencia Sabelin - G8 1800 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
+      { "title": "Agencia Sabelin - G7 1200 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
     ]
   },
   "10": {
-    "title": "Agencia Sabelin - G8 1800 DD",
+    "title": "Agencia Sabelin - G7 1200 DD",
     "images": ["./assets/agenciaSab1.jpg", "./assets/agenciaSab2.jpg"],
     "price": "100",
     "related": [
       { "title": "Grupo Agencia - G8 1800 DD", "image": "./assets/agencia1.jpg", "price": "200" },
       { "title": "Grupo Agencia - G7 1200 DD", "image": "./assets/agenciaAlt1.jpg", "price": "200" },
-      { "title": "Agencia Chadre - G8 1800 DD", "image": "./assets/agenciaChad1.jpg", "price": "100" }
+      { "title": "Agencia Chadre - G7 1200 DD", "image": "./assets/agenciaChad1.jpg", "price": "100" }
     ]
   },
   "11": {
@@ -100,8 +100,8 @@
     "price": "200",
     "related": [
       { "title": "Grupo Agencia - G8 1800 DD", "image": "./assets/agencia1.jpg", "price": "200" },
-      { "title": "Agencia Chadre - G8 1800 DD", "image": "./assets/agenciaChad1.jpg", "price": "100" },
-      { "title": "Agencia Sabelin - G8 1800 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
+      { "title": "Agencia Chadre - G7 1200 DD", "image": "./assets/agenciaChad1.jpg", "price": "100" },
+      { "title": "Agencia Sabelin - G7 1200 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
     ]
   },
   "12": {

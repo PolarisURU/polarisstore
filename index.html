@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Toastify -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.min.css"
+        integrity="sha512-UiKdzM5DL+I+2YFxK+7TDedVyVm7HMp/bN85NeWMJNYortoll+Nd6PU9ZDrZiaOsdarOyk9egQm6LOJZi36L2g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+
+    <link rel="shortcut icon" href="assets/favicon.jpg" type="image/x-icon">
+    <meta name="theme-color" content="#2c054d">
+
+    <title>Polaris Store</title>
+</head>
+
+<body>
+    <div class="bodyContainer">
+        <div class="topContainer">
+            <div class="title">
+                <h1>Polaris Store</h1>
+                <div class="socials">
+                    <a href="https://www.tiktok.com/@epolaris26" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://www.instagram.com/polaris_uru" target="_blank" rel="noopener noreferrer"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+
+            <button id="cartBtn" data-bs-toggle="modal" data-bs-target="#cartModal">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="itemsEnCarritoSpan"></span>
+            </button>
+        </div>
+
+
+        <!-- Modal Productos -->
+        <div class="modal fade" id="productModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="productTitle"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="productCarousel" class="carousel slide mb-3" data-bs-ride="carousel">
+                            <div class="carousel-inner" id="productCarouselInner"></div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon"></span>
+                                <span class="visually-hidden">Anterior</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon"></span>
+                                <span class="visually-hidden">Siguiente</span>
+                            </button>
+                        </div>
+
+                        <p id="productPrice" class="fw-bold"></p>
+                        <button type="button" class="btn btn-success" id="addToCartBtn">Añadir al Carrito</button>
+                        <hr>
+                        <h6>Productos relacionados</h6>
+                        <div id="relatedProducts" class="row"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="productsContainer" id="productsContainer">
+            <!-- Aca se cargan los productos -->
+        </div>
+
+        <footer>
+            <a href="https://youtu.be/G42_y528TAE" target="_blank" rel="noopener noreferrer">Guía de Instalación</a>
+            <p>Por cualquier duda, comunicate a Whatsapp: 098883588</p>
+        </footer>
+
+        <!-- Carrito -->
+        <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="cartModalLabel">Carrito</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="cart-body">
+
+                    </div>
+                    <div class="modal-footer">
+                        <p>Coste Total: $<span id="spanPrecioTotal">0</span></p>
+                        <button type="button" class="btn btn-success" id="finish">Terminar Compra</button>
+                        <button type="button" class="btn btn-danger" id="clearCartBtn">Limpiar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal Checkout -->
+    <div class="modal fade" id="checkoutModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Finalizar Compra</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body" id="checkout-body">
+                    <!-- Aca se carga el resumen del carrito -->
+                </div>
+                <div class="modal-guide">
+                    <p>Para terminar tu compra, enviá una foto de este carrito junto con el comprobante de pago al
+                        Whatsapp 098883588.</p>
+                    <p>Luego, seguí la <a href="https://youtu.be/G42_y528TAE" target="_blank"
+                            rel="noopener noreferrer">Guía de Instalación</a>. (También la encontras abajo en la página)
+                    </p>
+                    <p id="note">Nota: para usar las skins necesitás el mod</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="paymentMethodsBtn">Medios de Pago</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Medios de Pago -->
+    <div class="modal fade" id="paymentModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Medios de Pago</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item">Transferencias dentro de Santander:
+                            <p>Cuenta: 1206291792</p>
+                            <p>Moneda: UYU</p>
+                            <p>Sucursal: 73 - Arocena</p>
+                        </li>
+
+                        <li class="list-group-item">Mi Dinero
+                            <p>Cuenta: 9850483</p>
+                            <p>Enzo da Fonte</p>
+                        </li>
+
+                        <li class="list-group-item">Prex
+                            <p>Cuenta: 1369130</p>
+                            <p>Enzo da Fonte</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="backToCheckoutBtn">Volver</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+
+    <!-- Toastify JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.6.1/toastify.js"
+        integrity="sha512-MnKz2SbnWiXJ/e0lSfSzjaz9JjJXQNb2iykcZkEY2WOzgJIWVqJBFIIPidlCjak0iTH2bt2u1fHQ4pvKvBYy6Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- JS -->
+    <script src="./main.js"></script>
+</body>
+
+</html>

@@ -83,7 +83,7 @@
 .productsContainer {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2vh;
+    gap: 6vh;
     width: 90%;
     margin-top: 5vh;
 }
@@ -93,7 +93,7 @@
 }
 
 .card-title{
-    font-size: 2.3vh;
+    font-size: 2.25vh;
     text-wrap: nowrap;
 }
 

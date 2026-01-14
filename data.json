@@ -1,5 +1,25 @@
 {
   "0": {
+    "title": "DAC",
+    "images": ["./assets/dac1.png", "./assets/dac2.png"],
+    "price": "0",
+    "related": [
+      { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" },
+      { "title": "Grupo Agencia - G8 1800 DD", "image": "./assets/agencia1.jpg", "price": "200" },
+      { "title": "Academia del Cerro", "image": "./assets/academia1.jpg", "price": "0" }
+    ]
+  },
+  "1": {
+    "title": "Academia del Cerro",
+    "images": ["./assets/academia1.jpg", "./assets/academia2.jpg"],
+    "price": "0",
+    "related": [
+      { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" },
+      { "title": "Grupo Agencia - G8 1800 DD", "image": "./assets/agencia1.jpg", "price": "200" },
+      { "title": "DAC", "image": "./assets/dac1.png", "price": "0" }
+    ]
+  },
+  "2": {
     "title": "Nuñez - G8 1800 DD",
     "images": ["./assets/nunez1.jpg", "./assets/nunez2.jpg"],
     "price": "200",
@@ -7,7 +27,7 @@
       { "title": "Nuñez Peñarol - G8 1800 DD", "image": "./assets/nunezPen1.jpg", "price": "150" }
     ]
   },
-  "1": {
+  "3": {
     "title": "Nuñez Peñarol - G8 1800 DD",
     "images": ["./assets/nunezPen1.jpg", "./assets/nunezPen2.jpg"],
     "price": "150",
@@ -16,7 +36,7 @@
       { "title": "Peñarol - INVICTUS", "image": "./assets/penarol1.jpg", "price": "150" }
     ]
   },
-  "2": {
+  "4": {
     "title": "Turil - G8 1800 DD",
     "images": ["./assets/turil1.jpg", "./assets/turil2.jpg"],
     "price": "200",
@@ -24,7 +44,7 @@
       { "title": "Turil - G7 1200 DD", "image": "./assets/turilAlt1.jpg", "price": "200" }
     ]
   },
-  "3": {
+  "5": {
     "title": "Turil - G7 1200 DD",
     "images": ["./assets/turilAlt1.jpg", "./assets/turilAlt2.jpg"],
     "price": "200",
@@ -32,7 +52,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "4": {
+  "6": {
     "title": "Turismar - G8 1800 DD",
     "images": ["./assets/turismar1.jpg", "./assets/turismar2.jpg"],
     "price": "100",
@@ -40,7 +60,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "5": {
+  "7": {
     "title": "COT - G8 1800 DD",
     "images": ["./assets/cot1.jpg", "./assets/cot2.jpg"],
     "price": "100",
@@ -48,7 +68,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "6": {
+  "8": {
     "title": "Nossar - G8 1800 DD",
     "images": ["./assets/nossar1.jpg", "./assets/nossar2.jpg"],
     "price": "120",
@@ -56,7 +76,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "7": {
+  "9": {
     "title": "Ega - G8 1800 DD",
     "images": ["./assets/ega1.jpg", "./assets/ega2.jpg"],
     "price": "120",
@@ -64,7 +84,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "8": {
+  "10": {
     "title": "Grupo Agencia - G8 1800 DD",
     "images": ["./assets/agencia1.jpg", "./assets/agencia2.jpg"],
     "price": "200",
@@ -74,7 +94,7 @@
       { "title": "Agencia Sabelin - G7 1200 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
     ]
   },
-  "9": {
+  "11": {
     "title": "Agencia Chadre - G7 1200 DD",
     "images": ["./assets/agenciaChad1.jpg", "./assets/agenciaChad2.jpg"],
     "price": "100",
@@ -84,7 +104,7 @@
       { "title": "Agencia Sabelin - G7 1200 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
     ]
   },
-  "10": {
+  "12": {
     "title": "Agencia Sabelin - G7 1200 DD",
     "images": ["./assets/agenciaSab1.jpg", "./assets/agenciaSab2.jpg"],
     "price": "100",
@@ -94,7 +114,7 @@
       { "title": "Agencia Chadre - G7 1200 DD", "image": "./assets/agenciaChad1.jpg", "price": "100" }
     ]
   },
-  "11": {
+  "13": {
     "title": "Grupo Agencia - G7 1200 DD",
     "images": ["./assets/agenciaAlt1.jpg", "./assets/agenciaAlt2.jpg"],
     "price": "200",
@@ -104,7 +124,7 @@
       { "title": "Agencia Sabelin - G7 1200 DD", "image": "./assets/agenciaSab1.jpg", "price": "100" }
     ]
   },
-  "12": {
+  "14": {
     "title": "TTL - G8 1800 DD",
     "images": ["./assets/ttl1.jpg", "./assets/ttl2.jpg"],
     "price": "80",
@@ -112,7 +132,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "13": {
+  "15": {
     "title": "Uruguay - G8 1800 DD",
     "images": ["./assets/uru1.jpg", "./assets/uru2.jpg"],
     "price": "100",
@@ -120,7 +140,7 @@
       { "title": "Uruguay CopaAmérica G8 1800DD", "image": "./assets/uruAlt1.jpg", "price": "100" }
     ]
   },
-  "14": {
+  "16": {
     "title": "UY Copa América - G8 1800DD",
     "images": ["./assets/uruAlt1.jpg", "./assets/uruAlt2.jpg"],
     "price": "100",
@@ -128,7 +148,7 @@
       { "title": "Uruguay - G8 1800 DD", "image": "./assets/uru1.jpg", "price": "100" }
     ]
   },
-  "15": {
+  "17": {
     "title": "Colonia Express - G8 1800 DD",
     "images": ["./assets/colonia1.jpg", "./assets/colonia2.jpg"],
     "price": "100",
@@ -136,7 +156,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "16": {
+  "18": {
     "title": "Vittori - G7 1200 DD",
     "images": ["./assets/vittori1.jpg", "./assets/vittori2.jpg"],
     "price": "80",
@@ -145,7 +165,7 @@
       { "title": "Plama - G7 1200 DD", "image": "./assets/plama1.jpg", "price": "80" }
     ]
   },
-  "17": {
+  "19": {
     "title": "Alonso - G7 1200 DD",
     "images": ["./assets/alonso1.jpg", "./assets/alonso2.jpg"],
     "price": "80",
@@ -154,7 +174,7 @@
       { "title": "Plama - G7 1200 DD", "image": "./assets/plama1.jpg", "price": "80" }
     ]
   },
-  "18": {
+  "20": {
     "title": "Plama - G7 1200 DD",
     "images": ["./assets/plama1.jpg", "./assets/plama2.jpg"],
     "price": "80",
@@ -163,7 +183,7 @@
       { "title": "Vittori - G7 1200 DD", "image": "./assets/vittori1.jpg", "price": "80" }
     ]
   },
-  "19": {
+  "21": {
     "title": "Decatur - G7 1200 DD",
     "images": ["./assets/decatur1.jpg", "./assets/decatur2.jpg"],
     "price": "80",
@@ -171,7 +191,7 @@
       { "title": "Decatur Cerro Largo - G7 1200 DD", "image": "./assets/decaturAlt1.jpg", "price": "80" }
     ]
   },
-  "20": {
+  "22": {
     "title": "Decatur Cerro Largo - G7 1200 DD",
     "images": ["./assets/decaturAlt1.jpg", "./assets/decaturAlt2.jpg"],
     "price": "80",
@@ -179,7 +199,7 @@
       { "title": "Decatur - G7 1200 DD", "image": "./assets/decatur1.jpg", "price": "80" }
     ]
   },
-  "21": {
+  "23": {
     "title": "La Flotta - G7 1200 DD",
     "images": ["./assets/flotta1.jpg", "./assets/flotta2.jpg"],
     "price": "80",
@@ -187,7 +207,7 @@
       { "title": "La Flotta club - G7 1200 DD", "image": "./assets/flottaAlt1.jpg", "price": "80" }
     ]
   },
-  "22": {
+  "24": {
     "title": "La Flotta club - G7 1200 DD",
     "images": ["./assets/flottaAlt1.jpg", "./assets/flottaAlt2.jpg"],
     "price": "80",
@@ -195,7 +215,7 @@
       { "title": "La Flotta - G7 1200 DD", "image": "./assets/flotta1.jpg", "price": "80" }
     ]
   },
-  "23": {
+  "25": {
     "title": "Cita - G7 1200 DD",
     "images": ["./assets/cita1.jpg", "./assets/cita2.jpg"],
     "price": "120",
@@ -203,7 +223,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "24": {
+  "26": {
     "title": "Peñarol - INVICTUS",
     "images": ["./assets/penarol1.jpg", "./assets/penarol2.jpg"],
     "price": "150",
@@ -211,7 +231,7 @@
       { "title": "Nuñez Peñarol - G8 1800 DD", "image": "./assets/nunezPen1.jpg", "price": "150" }
     ]
   },
-  "25": {
+  "27": {
     "title": "Copay - INVICTUS",
     "images": ["./assets/copay1.jpg", "./assets/copay2.jpg"],
     "price": "120",
@@ -219,7 +239,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "26": {
+  "28": {
     "title": "Bruno - G8 1200 DD",
     "images": ["./assets/bruno1.jpg", "./assets/bruno2.jpg"],
     "price": "80",
@@ -227,7 +247,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "27": {
+  "29": {
     "title": "Rutas del Sol - G8 1200 DD",
     "images": ["./assets/rutas1.jpg", "./assets/rutas2.jpg"],
     "price": "100",
@@ -235,7 +255,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "28": {
+  "30": {
     "title": "Tur-este - G8 1200 DD",
     "images": ["./assets/tureste1.jpg", "./assets/tureste2.jpg"],
     "price": "80",
@@ -243,7 +263,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "29": {
+  "31": {
     "title": "El Norteño - G8 1200 DD",
     "images": ["./assets/norteno1.jpg", "./assets/norteno2.jpg"],
     "price": "100",
@@ -251,7 +271,7 @@
       { "title": "Turil - G8 1800 DD", "image": "./assets/turil1.jpg", "price": "200" }
     ]
   },
-  "30": {
+  "32": {
     "title": "Flecha Bus - G8 1800 DD",
     "images": ["./assets/flecha1.jpg", "./assets/flecha2.jpg"],
     "price": "100",

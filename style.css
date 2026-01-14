@@ -106,6 +106,14 @@
     text-align: center;
 }
 
+#productDescription {
+    display: none;
+}
+
+#dlBtn {
+    display: none;
+}
+
 #note {
     font-size: 1.55vh;
 }

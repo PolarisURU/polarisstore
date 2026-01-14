@@ -81,11 +81,38 @@ function fillProductModal(productId) {
         relatedProductsContainer.appendChild(relatedDiv);
     });
 
+    // Descripcion de los productos gratis
+    const description = document.getElementById('productDescription');
+
+    if (product.price == "0") {
+        description.style.display = "block";
+
+        if (productId == "0") {
+            description.textContent = "El mod esta hecho para el primer Scania que sale en la tienda y el tráiler es un refrigerado. Extraer el archivo rar y mover las 2 carpetas a la carpeta de mod de Euro Truck Simulator 2";
+        }
+
+        else if (productId == "1") {
+            description.textContent = "El archivo a descargar es para el mod Marcopolo g7 1200 de MOD-SHOP se coloca en el archivo edit del mismo. Abrir el archivo edit del mod g7 1200 - abrir la carpeta vehicle - bus - g7_1200 - acessorios - skins, pasar la imagen dds descargada a esa carpeta, hacerlo nuevamente en la carpeta porta (conservar el nombre)";
+        }
+    }
+
+    else {
+        description.style.display = "none";
+    }
+
+
+
     // Controlar estado del botón "Añadir al carrito"
     const addToCartBtn = document.getElementById('addToCartBtn');
+    const dlBtn = document.getElementById('dlBtn');
     const prodIdNum = parseInt(productId);
 
     const yaEnCarrito = carrito.some(item => parseInt(item.productId) === prodIdNum);
+
+    if (product.price != "0") {
+        dlBtn.style.display = "none";
+        addToCartBtn.style.display = "inline-block";
+    }
 
     if (yaEnCarrito) {
         addToCartBtn.textContent = "Ya en el carrito";
@@ -99,7 +126,25 @@ function fillProductModal(productId) {
         addToCartBtn.classList.remove("btn-secondary");
     }
 
+    // Controlar estado del botón "Descargar" 
 
+    if (product.price == "0") {
+        dlBtn.style.display = "inline-block";
+        addToCartBtn.style.display = "none";
+        let target;
+
+        if (productId == "0") {
+                target = "https://mega.nz/file/jDQSCa7I#it48bmTz5mydb6ELSUHxNHEheMQp70wkyMDK-Ah7Zu8";
+            }
+
+            else {
+                target = "https://mega.nz/file/bLQ0iarS#3t0yqvKJKsDgM9-gFYUMO6mQyKqHQw82HfpIpXH8Be8";
+            }
+
+        dlBtn.onclick = () => {
+            window.open(target, "_blank");
+        };
+    }
 }
 
 function openProductModal(productId) {
